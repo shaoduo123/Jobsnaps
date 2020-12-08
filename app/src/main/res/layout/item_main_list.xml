@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ripple_bg"
+    android:orientation="vertical"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="平困山区的调查"
+        android:textColor="#444444"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_describe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="10dp"
+        android:maxLines="2"
+        android:minLines="1"
+        android:text="周三早上丢失了红色钱包，在食堂二楼"
+        android:textColor="#898989"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_describe"
+        android:layout_marginTop="10dp"
+        android:text="20130240122"
+        android:textColor="#898989"
+        android:textSize="12sp"/>
+
+
+    <TextView
+        android:id="@+id/tv_file_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:background="#4494e4"
+        android:drawablePadding="5dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp"
+        android:text="5"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:layout_alignBottom="@+id/tv_time"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="9dp" />
+   <!-- <TextView
+        android:id="@+id/tv_favs_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_describe"
+        android:layout_marginTop="10dp"
+        android:background="#ffff00"
+        android:drawablePadding="5dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="3dp"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="12sp"/>-->
+
+</RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lightgray" />
+</LinearLayout>

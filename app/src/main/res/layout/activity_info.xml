@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:showDividers="end"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/info_bar_back_iv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="28dp"
+                android:background="@drawable/ripple_bg"
+                android:src="@mipmap/ic_back_black_48dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
+
+
+            <ImageView
+                android:id="@+id/info_bar_edit_iv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ripple_bg"
+                android:src="@mipmap/ic_edit_black_128dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="18dp" />
+
+
+            <TextView
+                android:id="@+id/info_bar_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="详情"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/black_"
+                android:layout_marginStart="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/lightgray"
+                android:id="@+id/view" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/info_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:singleLine="true"
+        android:background="@drawable/shape_form"
+        android:maxEms="20"
+        android:hint="文件名称"
+        android:textSize="16sp"
+        android:textColor="@color/black_"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_vertical"/>
+
+    <EditText
+        android:id="@+id/info_ds_et"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="备注信息"
+        android:textSize="16sp"
+        android:gravity="top|left"
+        android:textColor="@color/black_"
+        android:background="@drawable/shape_form"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_vertical"/>
+
+
+        <com.shao.jobsnaps.view.widget.tagview.TagView
+            android:id="@+id/info_tagview"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/shape_form"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="100dp">
+        </com.shao.jobsnaps.view.widget.tagview.TagView>
+        <TextView
+            android:id="@+id/info_bar_tip_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:text="请您为您的文件添加和修改文件的信息"
+            android:textSize="14sp"
+            android:textColor="@color/gray_cc"/>
+    <Button
+        android:id="@+id/info_submit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="30dp"
+        android:visibility="invisible"
+        android:text="保存修改"
+        android:enabled="true"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:background="@color/gray_8f" />
+
+
+</LinearLayout>

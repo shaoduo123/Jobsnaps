@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.shao.jobsnaps.view.widget.RotateLoading
+        android:id="@+id/rotateloading"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        app:loading_color="@color/gray_cc"
+        app:loading_speed="11"
+        app:loading_width="5dp" />
+
+</RelativeLayout>

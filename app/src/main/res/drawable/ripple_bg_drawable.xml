@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--item  水波嗲年纪效果背景-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#ffffff" /><!--背景颜色！！-->
+    <corners android:radius="0dp" />
+</shape>

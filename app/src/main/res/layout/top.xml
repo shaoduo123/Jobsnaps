@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:showDividers="end"
+    android:layout_height="50dp">
+
+    <ImageView
+        android:id="@+id/pro_bar_logo"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_logo"
+        android:layout_marginLeft="10dp"
+        />
+    <ImageView
+        android:id="@+id/pro_bar_add"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ripple_bg"
+        android:src="@drawable/ic_add_black_32dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="18dp" />
+
+    <ImageView
+        android:id="@+id/pro_bar_search"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/ripple_bg"
+        android:src="@drawable/ic_search_black_24dp"
+        android:layout_marginEnd="25dp"
+        android:layout_alignTop="@+id/pro_top_name"
+        android:layout_toStartOf="@+id/pro_bar_add" />
+
+    <TextView
+        android:id="@+id/pro_top_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="文件分类大师"
+        android:layout_toRightOf="@+id/pro_bar_logo"
+        android:layout_marginLeft="10dp"
+        android:textColor="#666666"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/lightgray" />
+
+</RelativeLayout>

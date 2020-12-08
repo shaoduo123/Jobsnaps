@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<!--<com.shao.jobsnaps.view.widget.menu.MainView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">-->
+
+<!--    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:showDividers="end"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/pro_bar_logo"
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/logo"
+            android:layout_marginLeft="10dp"
+            />
+        <ImageView
+            android:id="@+id/pro_bar_add"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/icon_tbar_add" />
+
+        <ImageView
+            android:id="@+id/pro_bar_info"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="28dp"
+            android:layout_toLeftOf="@+id/pro_bar_add"
+            android:alpha="0.7"
+            android:src="@mipmap/info" />
+
+        <TextView
+            android:id="@+id/pro_top_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="JobSnaps"
+            android:layout_toRightOf="@+id/pro_bar_logo"
+            android:layout_marginLeft="10dp"
+            android:textColor="#666666"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/bg_grey" />
+
+    </RelativeLayout>-->
+    <include android:id="@+id/pro_top" layout="@layout/top"/>
+
+    <!--SlideAndDragListView -->
+            <com.yydcdut.sdlv.SlideAndDragListView
+                android:id="@+id/pro_ls"
+                android:layout_below="@+id/pro_top"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+            </com.yydcdut.sdlv.SlideAndDragListView>
+
+    <!--广告-->
+    <!--<include layout="@layout/layout_ad_bottom"  />-->
+</LinearLayout>
+<!--
+</com.shao.jobsnaps.view.widget.menu.MainView>
+-->

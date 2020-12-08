@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/file_fragment_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/top_file"/>
+
+    <com.yydcdut.sdlv.SlideAndDragListView
+        android:id="@+id/frg_file_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+    </com.yydcdut.sdlv.SlideAndDragListView>
+
+<!--    <com.mingle.widget.LoadingView
+        android:id="@+id/loadView"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:loadingText="加载中..."
+        android:layout_centerInParent="true"/>-->
+<!--    <TextView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:textSize="30dp"
+        android:text="测试一下啊啊啊"/>-->
+<!--    <ImageView
+        android:id="@+id/file_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/empty"
+        android:layout_gravity="center_horizontal|center_vertical"/>-->
+
+    <!--广告-->
+  <!--  <include layout="@layout/layout_ad_bottom"  />-->
+</LinearLayout>

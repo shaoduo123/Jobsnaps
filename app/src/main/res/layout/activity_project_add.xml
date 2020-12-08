@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shao.jobsnaps.view.ProjectAddActivity">
+
+
+    <EditText
+        android:id="@+id/reg_account"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:singleLine="true"
+        android:background="@drawable/shape_form"
+        android:maxEms="20"
+        android:hint="@string/pro_name"
+        android:textSize="16sp"
+        android:textColor="@color/black_"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_vertical"/>
+
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:hint="@string/pwd"
+        android:textSize="16sp"
+        android:textColor="@color/black_"
+        android:singleLine="true"
+        android:background="@drawable/shape_form"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_vertical"/>
+
+    <EditText
+        android:id="@+id/reg_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:hint="@string/confirm"
+        android:textSize="16sp"
+        android:textColor="@color/black_"
+        android:singleLine="true"
+        android:background="@drawable/shape_form"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_vertical"/>
+
+</LinearLayout>

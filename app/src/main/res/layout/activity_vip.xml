@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shao.jobsnaps.view.VipActivity"
+    android:orientation="vertical">
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/bg_grey"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints">
+
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:src="@mipmap/ic_back_black_48dp"
+        />
+    <Button
+        android:id="@+id/vip_buy_bt"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="联系开发者购买"
+        android:textColor="@color/white"
+        />
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <LinearLayout
+        android:id="@+id/item_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <!-- android:background="@drawable/ripple_bg"-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/lightgray"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <!-- android:background="@drawable/ripple_bg"-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <ImageView
+                    android:id="@+id/item_2_img"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@mipmap/ic_noad_black_128dp" />
+
+                <TextView
+                    android:id="@+id/item_2_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="无广告"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#444444"
+                    android:textSize="16sp"
+                    android:ellipsize="middle"
+                    tools:ignore="HardcodedText,RtlHardcoded"
+                    android:layout_marginStart="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/item_2_img" />
+
+                <ImageView
+                    android:id="@+id/item_5_img"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="140dp"
+                    android:src="@mipmap/ic_file_folder" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/lightgray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <!-- android:background="@drawable/ripple_bg"-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <ImageView
+                    android:id="@+id/item_3_img"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@mipmap/ic_mark_black_128dp" />
+
+                <TextView
+                    android:id="@+id/item_3_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="查看标记内容"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#444444"
+                    android:textSize="16sp"
+                    android:ellipsize="middle"
+                    tools:ignore="HardcodedText,RtlHardcoded"
+                    android:layout_marginStart="33dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/item_3_img" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/lightgray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <!-- android:background="@drawable/ripple_bg"-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <ImageView
+                    android:id="@+id/item_4_img"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@mipmap/ic_recycle_black_128dp" />
+
+                <TextView
+                    android:id="@+id/item_4_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="文件删除恢复"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#444444"
+                    android:textSize="16sp"
+                    android:ellipsize="middle"
+                    tools:ignore="HardcodedText,RtlHardcoded"
+                    android:layout_marginStart="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/item_4_img" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/lightgray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+            <!-- android:background="@drawable/ripple_bg"-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/lightgray"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+

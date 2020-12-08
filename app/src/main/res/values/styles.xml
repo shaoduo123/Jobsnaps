@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+
+    <!--设置给ToolbarActivity的风格-->
+    <style name="NoActionbarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--设置Toobar左侧空白消失-->
+        <item name="toolbarStyle">@style/ClubToolbar</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="ClubToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">#FFFFFF</item><!--toobar背景颜色-->
+        <item name="contentInsetStart">0dp</item><!-- 设置该属性解决Toolbar左侧空白部分-->
+    </style>
+
+    <!--设置给Toolbar的风格-->
+    <style name="ToolBarTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:textColorSecondary">@color/colorPrimaryDark</item>
+        <item name="android:colorBackground">#a163b1ff</item>
+        <item name="android:actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+        <!--  <item name="android:actionOverflowButtonStyle">@style/OverflowButtonStyle</item>-->
+    </style>
+
+    <!--设置toolbar弹出菜单的位置-->
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">true</item>  <!--设置为false即可使menu位置位于toolbar之下-->
+    </style>
+    <!--修改toolbar弹出剩余隐藏菜单条目按钮的样式-->
+    <!--    <style name="OverflowButtonStyle" parent="@android:style/Widget.ActionButton.Overflow">
+           &lt;!&ndash; <item name="android:src">@mipmap/ic_menu_setting</item>&ndash;&gt;
+        </style>-->
+
+
+    <!--bottomdialog  style-->
+    <style name="BottomDialog" parent="@style/Base.V7.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="BottomDialog.Animation" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/translate_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/translate_dialog_out</item>
+    </style>
+
+
+    <!--circleprocessdialog  style-->
+    <style parent="@android:style/Theme.Dialog" name="custom_dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog的windowFrame框为无 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否漂现在activity上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 去除黑色边框的关键设置项 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 屏幕背景是否变暗 -->
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+</resources>

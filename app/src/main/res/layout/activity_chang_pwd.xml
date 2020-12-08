@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shao.jobsnaps.view.PasswordActivity">
+    <TextView
+        android:id="@+id/pwd_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/black_"
+        android:text="少多您好"
+        android:textSize="18sp"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/pwd_tishi1_tv"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="设置您的工作的密码"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_below="@+id/pwd_title_tv"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:id="@+id/pwd_tishi2_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请牢记您的4位密码"
+        android:layout_below="@+id/pwd_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+    <com.shao.jobsnaps.view.widget.PasswordView
+        android:id="@+id/pwd_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cipherEnable="true"
+        android:layout_marginTop="165dp"
+        android:layout_below="@+id/pwd_tishi1_tv"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

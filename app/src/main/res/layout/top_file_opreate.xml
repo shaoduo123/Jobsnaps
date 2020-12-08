@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:showDividers="end"
+    android:layout_gravity="top"
+    android:gravity="top"
+    android:layout_height="50dp">
+
+    <ImageView
+        android:id="@+id/file_op_bar_bill"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/ripple_bg"
+        android:src="@mipmap/ic_bill_black_128dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp" />
+
+<!--    <ImageView
+        android:id="@+id/file_op_bar_move"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/ripple_bg"
+        android:src="@mipmap/ic_move_black_48dp"
+        android:layout_alignTop="@+id/file_op_bar_bill"
+        android:layout_toStartOf="@+id/file_op_bar_bill"
+        android:layout_marginEnd="26dp" />-->
+
+    <ImageView
+        android:id="@+id/file_op_bar_cut"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/ripple_bg"
+        android:src="@mipmap/ic_cut_black_128dp"
+        android:layout_alignTop="@+id/file_op_bar_bill"
+        android:layout_toStartOf="@+id/file_op_bar_bill"
+        android:layout_marginEnd="10dp" />
+
+    <ImageView
+        android:id="@+id/file_op_bar_copy"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/ripple_bg"
+        android:src="@mipmap/ic_copy_black_48dp"
+        android:layout_alignTop="@+id/file_op_bar_cut"
+        android:layout_toStartOf="@+id/file_op_bar_cut"
+        android:layout_marginEnd="18dp" />
+
+    <ImageView
+        android:id="@+id/file_op_bar_rename"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:background="@drawable/ripple_bg"
+        android:src="@mipmap/ic_rename_black_128dp"
+        android:layout_alignTop="@+id/file_op_bar_copy"
+        android:layout_toStartOf="@+id/file_op_bar_copy"
+        android:layout_marginEnd="18dp" />
+
+    <TextView
+        android:id="@+id/file_op_bar_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="选中1个"
+        android:layout_toRightOf="@+id/file_op_bar_cancel"
+        android:layout_marginLeft="15dp"
+        android:textColor="#666666"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/file_op_bar_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="取消"
+        android:layout_marginLeft="10dp"
+        android:textColor="#666666"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/lightgray" />
+
+</RelativeLayout>
+</LinearLayout>

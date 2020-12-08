@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_file_backgroud"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:background="@drawable/ripple_bg"
+    android:orientation="vertical">
+    <!-- android:background="@drawable/ripple_bg"-->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/item_file_img"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@mipmap/ic_file_img" />
+    <ImageView
+        android:id="@+id/item_file_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_mark_black_48dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/item_file_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:paddingRight="30dp"
+        android:layout_toEndOf="@+id/item_file_img"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:text="平困山区的调查的2018_23232_副本_19201111不不不sdfsdfsdfsdf.jpg"
+        android:textColor="#444444"
+        android:textSize="16sp"
+        android:layout_toLeftOf="@+id/item_file_img_info"
+        tools:ignore="HardcodedText,NotSibling,RtlHardcoded" />
+
+ <TextView
+        android:id="@+id/item_file_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="20170240122"
+        android:textColor="#898989"
+        android:textSize="12sp"
+     android:layout_alignParentBottom="true"
+     android:layout_alignStart="@+id/item_file_tv_name" />
+
+    <TextView
+        android:id="@+id/item_file_tv_from_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="来自"
+        android:textColor="#898989"
+        android:textSize="12sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@+id/item_file_tv_time" />
+
+    <TextView
+        android:id="@+id/item_file_tv_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1111目录"
+        android:textColor="@color/lightskyblue"
+        android:textSize="12sp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/item_file_tv_from_tip" />
+
+
+
+ <!--   <ImageView
+            android:id="@+id/item_file_img_info"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />-->
+
+    <LinearLayout
+        android:id="@+id/item_file_right"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        >
+        <ImageView
+            android:id="@+id/item_file_img_info"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+
+    <!--
+        <TextView
+            android:id="@+id/tv_file_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_describe"
+            android:layout_toLeftOf="@+id/tv_lauch"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#4494e4"
+            android:drawablePadding="5dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:text="5"
+            android:textColor="#ffffff"
+            android:textSize="12sp"></TextView>
+        <TextView
+            android:id="@+id/tv_lauch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_describe"
+            android:layout_marginTop="10dp"
+            android:background="#5cbe6c"
+            android:drawablePadding="5dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:text="shaoduo"
+            android:textColor="#ffffff"
+            android:textSize="12sp"></TextView>-->
+</RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lightgray"/>
+</LinearLayout>
